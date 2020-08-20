@@ -1,7 +1,11 @@
+html, body {
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
-    background-image: linear-gradient(to bottom, rgb(226, 95, 43, 0.3) 0%, rgb(226, 95, 43, 0.3) 85%,rgb(67, 67, 67));
+    background-image: linear-gradient(to bottom, rgb(226, 95, 43) 0%, rgb(226, 95, 43) 85%,rgb(67, 67, 67));
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -13,10 +17,11 @@ body {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    flex: 1;
 }
 
 #nav-inner {
-    margin: auto 20% auto 0;
+    margin: auto 30% auto 0;
     width: auto;
 }
 
@@ -39,20 +44,23 @@ body {
 }
 
 #content {
-    width: 60%;
-    margin: 50px auto;
+    width: 40%;
+    height: 100%;
+    margin: 50px auto 0;
+    background-color: rgb(241, 236, 228);
+    padding: 10px 15px;
 }
 
 #studies-content {
-    width: 60%;
-    margin: auto;
+    width: 40%;
+    height: 100%;
+    margin: 50px auto 0;
     display: flex;
-    margin-top: 50px;
+    background-color: rgb(241, 236, 228);
 }
 
 #studies {
     margin: 0 auto;
-    width: 50%;
 }
 
 #skills {
@@ -61,7 +69,7 @@ body {
 }
 
 #contact {
-    width: 60%;
+    width: 40%;
     margin: auto;
     display: flex;
     margin-top: 50px;
@@ -84,7 +92,7 @@ body {
 #contact-content p, a {
     font-size: 22px;
     display: inline-block;
-    margin: 0 0 30px 0;
+    margin: 0 0 15px 0;
 }
 
 #contact-content a {
@@ -99,6 +107,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 50%;
 }
 
 h1 {
