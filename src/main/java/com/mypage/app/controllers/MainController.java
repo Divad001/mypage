@@ -12,7 +12,7 @@ public class MainController {
         if (lang != null && lang.equals("EN")) {
             return "EN/indexEN";
         }
-        return "HU/index";
+        return "2";
     }
 
     @GetMapping("/studies")
