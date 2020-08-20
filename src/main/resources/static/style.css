@@ -1,11 +1,14 @@
 body {
     margin: 0;
     font-family: sans-serif;
+    background-image: linear-gradient(to bottom, rgb(226, 95, 43, 0.3) 0%, rgb(226, 95, 43, 0.3) 70%,rgb(67, 67, 67));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #nav-outer {
-    background-color: darkgrey;
-    height: 40px;
+    background-color: rgb(67, 67, 67);
+    height: 60px;
     margin: 0;
     display: flex;
     flex-direction: row-reverse;
@@ -13,32 +16,54 @@ body {
 }
 
 #nav-inner {
-    margin-right: 10%;
+    margin-right: 20%;
     width: auto;
 }
 
 #nav-inner a {
     display: inline-block;
     text-decoration: none;
-    color: black;
+    color: rgb(237, 237, 237);
     width: 120px;
     text-align: center;
     font-size: 18px;
 }
 
 #nav-inner a:hover {
-    color: blueviolet;
+    color: rgb(226, 95, 43);
 }
 
-.active {
-    font-weight: bold;
+#nav-inner .active {
+    color: rgb(226, 95, 43);
 }
 
 #content {
-    width: 80%;
-    margin: auto;
+    width: 60%;
+    margin: 50px auto;
 }
 
 #content h1 {
-    margin: 50px 0;
+}
+
+#about-content p {
+    color: rgb(67, 67, 67);
+}
+
+#studies-content {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+}
+
+#studies {
+    margin: 0 auto;
+    width: 50%;
+    flex: 0 0 65%;
+}
+
+#skills {
+    margin: 0 auto;
+    width: 30%;
+    flex: 1;
 }
