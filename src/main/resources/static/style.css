@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-image: linear-gradient(to bottom, rgb(226, 95, 43, 0.3) 0%, rgb(226, 95, 43, 0.3) 70%,rgb(67, 67, 67));
+    background-image: linear-gradient(to bottom, rgb(226, 95, 43, 0.3) 0%, rgb(226, 95, 43, 0.3) 85%,rgb(67, 67, 67));
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -16,7 +16,7 @@ body {
 }
 
 #nav-inner {
-    margin-right: 20%;
+    margin: auto 20% auto 0;
     width: auto;
 }
 
@@ -27,6 +27,7 @@ body {
     width: 120px;
     text-align: center;
     font-size: 18px;
+    margin: auto 0;
 }
 
 #nav-inner a:hover {
@@ -42,13 +43,6 @@ body {
     margin: 50px auto;
 }
 
-#content h1 {
-}
-
-#about-content p {
-    color: rgb(67, 67, 67);
-}
-
 #studies-content {
     width: 60%;
     margin: auto;
@@ -59,11 +53,62 @@ body {
 #studies {
     margin: 0 auto;
     width: 50%;
-    flex: 0 0 65%;
 }
 
 #skills {
     margin: 0 auto;
     width: 30%;
-    flex: 1;
+}
+
+#contact {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+}
+
+#contact p {
+    margin: 0;
+}
+
+#image {
+    margin: 0 auto;
+    width: 40%;
+}
+
+#contact-content {
+    margin: auto auto;
+    width: 30%;
+}
+
+#contact-content p, a {
+    font-size: 22px;
+    display: inline-block;
+    margin: 0 0 30px 0;
+}
+
+#contact-content a {
+    text-decoration: none;
+    color: black;
+}
+
+#contact-content a:hover {
+    color: rgb(226, 95, 43);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    color: rgb(67, 67, 67);
+}
+
+.location {
+    color: rgb(226, 95, 43);
+}
+
+#tools li {
+    margin-bottom: 10px;
 }
