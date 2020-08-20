@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#nav-outer {
+    background-color: darkgrey;
+    height: 40px;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#nav-inner {
+    margin-right: 10%;
+    width: auto;
+}
+
+#nav-inner a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    width: 120px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#nav-inner a:hover {
+    color: blueviolet;
+}
+
+.active {
+    font-weight: bold;
+}
+
+#content {
+    width: 80%;
+    margin: auto;
+}
+
+#content h1 {
+    margin: 50px 0;
+}
