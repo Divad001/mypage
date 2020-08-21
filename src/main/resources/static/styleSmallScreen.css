@@ -1,0 +1,42 @@
+nav {
+    display: none;
+}
+
+#header {
+    display: block;
+}
+
+#content {
+    display: block;
+}
+
+#banner img {
+    height: auto;
+}
+
+#welcome {
+    font-size: 8vh;
+    justify-self: center;
+}
+
+#welcome p {
+    text-align: center;
+}
+
+#pic2 {
+    display: flex;
+    justify-content: center;
+}
+
+#pic3 {
+    padding-bottom: 0;
+    margin-bottom: 3vh;
+}
+
+#contact-content {
+    margin-bottom: 0;
+}
+
+#studies-content {
+    margin-bottom: 5vh;
+}

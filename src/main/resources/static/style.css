@@ -69,7 +69,7 @@ nav {
 #welcome {
     grid-column: 2 / 5;
     grid-row: 2 / 2;
-    font-size: 172px;
+    font-size: 10vw;
     justify-self: center;
 }
 
@@ -112,7 +112,10 @@ nav {
     grid-row: 3 / 3;
     margin: 0;
     justify-self: center;
-    /*padding-bottom: 40vh;*/
+}
+
+#pic3, #contact-content {
+    margin-bottom: 40vh;
 }
 
 #contact-content p {
@@ -149,8 +152,7 @@ nav {
 #pic3 {
     grid-column: 4 / 5;
     grid-row: 3 / 3;
-    margin: auto;
-    padding-bottom: 40vh;
+    margin-top: 0;
 }
 
 img {
