@@ -40,3 +40,20 @@ nav {
 #studies-content {
     margin-bottom: 5vh;
 }
+
+#langSelector {
+    display: block;
+    position: fixed;
+    top: 5%;
+    left: 90%;
+}
+
+#langSelector a {
+    text-decoration: none;
+    color: rgb(0, 119, 255);
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 4vh;
+    padding: 15%;
+    font-weight: bold;
+    border-radius: 5%;
+}

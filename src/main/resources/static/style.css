@@ -32,6 +32,10 @@ nav {
     color: rgb(0, 119, 255);
 }
 
+#langSelector {
+    display: none;
+}
+
 #menu {
     padding: 0;
     margin: 0 auto;
@@ -127,14 +131,15 @@ nav {
 }
 
 #contact-content a {
-    color: black;
+    color: rgb(0, 119, 255);
     display: block;
     margin: 10px;
     text-decoration: none;
+    width: fit-content;
 }
 
 #contact-content a:hover {
-    color: rgb(0, 119, 255);
+    color: rgb(0, 217, 255);
 }
 
 #pic1 {
