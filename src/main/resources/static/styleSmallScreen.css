@@ -45,7 +45,7 @@ nav {
     display: block;
     position: fixed;
     top: 5%;
-    left: 90%;
+    right: 5%;
 }
 
 #langSelector a {
