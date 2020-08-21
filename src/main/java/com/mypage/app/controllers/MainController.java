@@ -10,24 +10,8 @@ public class MainController {
     @GetMapping("/")
     public String index(@RequestParam(required = false) String lang) {
         if (lang != null && lang.equals("EN")) {
-            return "EN/indexEN";
+            return "indexEN";
         }
-        return "2";
-    }
-
-    @GetMapping("/studies")
-    public String studies(@RequestParam(required = false) String lang) {
-        if (lang != null && lang.equals("EN")) {
-            return "EN/studiesEN";
-        }
-        return "HU/studies";
-    }
-
-    @GetMapping("/contact")
-    public String contact(@RequestParam(required = false) String lang) {
-        if (lang != null && lang.equals("EN")) {
-            return "EN/contactEN";
-        }
-        return "HU/contact";
+        return "index";
     }
 }
