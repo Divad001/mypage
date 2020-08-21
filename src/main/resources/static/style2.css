@@ -110,12 +110,17 @@ nav {
 #contact-content {
     grid-column: 2 / 3;
     grid-row: 3 / 3;
-    margin: auto;
-    padding-bottom: 40vh;
+    margin: 0;
+    justify-self: center;
+    /*padding-bottom: 40vh;*/
 }
 
 #contact-content p {
     margin: 10px;
+}
+
+#contact-content p a {
+    display: inline;
 }
 
 #contact-content a {
