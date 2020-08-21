@@ -1,3 +1,8 @@
+var isIE = /*@cc_on!@*/false || !!document.documentMode;
+if(isIE === true) {
+    alert("Internet Explorer doesn't support css grid. Please consider using an other browser for full view. Thank you!")
+}
+
 // Cache selectors
 var lastId,
     menu = $("#menu"),
