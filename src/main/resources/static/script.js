@@ -1,20 +1,21 @@
 // Cache selectors
 var lastId,
-    topMenu = $("#nav-outer"),
-    topMenuHeight = topMenu.outerHeight()+15,
+    menu = $("#menu"),
+    menuHeight = menu.outerHeight()+15,
     // All list items
-    menuItems = topMenu.find("a"),
+    menuItems = menu.find("a"),
     // Anchors corresponding to menu items
     scrollItems = menuItems.map(function(){
       var item = $($(this).attr("href"));
-      if (item.length) { return item; }
+      if (item.length) { 
+        return item; }
     });
 
 // Bind click handler to menu items
 // so we can get a fancy scroll animation
 menuItems.click(function(e){
   var href = $(this).attr("href"),
-      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+      offsetTop = href === "#" ? 0 : $(href).offset().top-menuHeight/2;
   $('html, body').stop().animate({ 
       scrollTop: offsetTop
   }, 300);
@@ -24,7 +25,7 @@ menuItems.click(function(e){
 // Bind to scroll
 $(window).scroll(function(){
    // Get container scroll position
-   var fromTop = $(this).scrollTop()+topMenuHeight;
+   var fromTop = $(this).scrollTop()+menuHeight*2;
    
    // Get id of current scroll item
    var cur = scrollItems.map(function(){
