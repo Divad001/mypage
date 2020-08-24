@@ -1,0 +1,59 @@
+nav {
+    display: none;
+}
+
+#header {
+    display: block;
+}
+
+#content {
+    display: block;
+}
+
+#banner img {
+    height: auto;
+}
+
+#welcome {
+    font-size: 8vh;
+    justify-self: center;
+}
+
+#welcome p {
+    text-align: center;
+}
+
+#pic2 {
+    display: flex;
+    justify-content: center;
+}
+
+#pic3 {
+    padding-bottom: 0;
+    margin-bottom: 3vh;
+}
+
+#contact-content {
+    margin-bottom: 0;
+}
+
+#studies-content {
+    margin-bottom: 5vh;
+}
+
+#langSelector {
+    display: block;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+}
+
+#langSelector a {
+    text-decoration: none;
+    color: rgb(0, 119, 255);
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 4vh;
+    padding: 15%;
+    font-weight: bold;
+    border-radius: 5%;
+}

@@ -1,114 +1,199 @@
-body {
+html, body {
+    height: 100%;
     margin: 0;
     font-family: sans-serif;
-    background-image: linear-gradient(to bottom, rgb(226, 95, 43, 0.3) 0%, rgb(226, 95, 43, 0.3) 85%,rgb(67, 67, 67));
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
-#nav-outer {
-    background-color: rgb(67, 67, 67);
-    height: 60px;
-    margin: 0;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-
-#nav-inner {
-    margin: auto 20% auto 0;
-    width: auto;
+nav {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 9%;
+    overflow-x: hidden;
+    padding: 8px 0;
+    width: 130px;
+    border-radius: 5%;
+    margin-top: -135.5px;
+    margin-left: -65px;
 }
 
 #nav-inner a {
     display: inline-block;
     text-decoration: none;
-    color: rgb(237, 237, 237);
     width: 120px;
     text-align: center;
     font-size: 18px;
-    margin: auto 0;
+    margin: 15px auto;
+    color: black;
+    text-align: left;
 }
 
 #nav-inner a:hover {
-    color: rgb(226, 95, 43);
+    color: rgb(0, 119, 255);
 }
 
-#nav-inner .active {
-    color: rgb(226, 95, 43);
+#langSelector {
+    display: none;
+}
+
+#menu {
+    padding: 0;
+    margin: 0 auto;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu li.active a {
+    color: rgb(0, 119, 255);
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 18% 30% 4% 30% 18%;
+    grid-template-rows: auto;
+    grid-row-gap: 60px;
+    margin-bottom: 20vh;
+}
+
+#banner {
+    grid-column: 2 / 5;
+    grid-row: 1 / 1;
+}
+
+#banner img {
+    width: 100%;
+    height: 60vh;
+    border-radius: 0%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+#welcome {
+    grid-column: 2 / 5;
+    grid-row: 2 / 2;
+    font-size: 10vw;
+    justify-self: center;
+}
+
+#welcome p {
+    margin: 0 auto;
 }
 
 #content {
-    width: 60%;
-    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 18% 30% 4% 30% 18%;
+    grid-template-rows: repeat(3, minmax(30vh, auto));
+    grid-row-gap: 20vh;
+}
+
+#about-content {
+    grid-column: 2 / 3;
+    grid-row: 1 / 1; 
+}
+
+#about-content a {
+    color: green;
+    text-decoration: none;
+}
+
+#about-content a:hover {
+    color: rgb(0, 119, 255);
 }
 
 #studies-content {
-    width: 60%;
-    margin: auto;
-    display: flex;
-    margin-top: 50px;
+    grid-column: 4 / 5;
+    grid-row: 2 / 2;
 }
 
-#studies {
-    margin: 0 auto;
-    width: 50%;
-}
-
-#skills {
-    margin: 0 auto;
-    width: 30%;
-}
-
-#contact {
-    width: 60%;
-    margin: auto;
-    display: flex;
-    margin-top: 50px;
-}
-
-#contact p {
-    margin: 0;
-}
-
-#image {
-    margin: 0 auto;
-    width: 40%;
+#languages p {
+    margin: 10px 0 0 25px;
 }
 
 #contact-content {
-    margin: auto auto;
-    width: 30%;
+    grid-column: 2 / 3;
+    grid-row: 3 / 3;
+    margin: 0;
+    justify-self: center;
 }
 
-#contact-content p, a {
-    font-size: 22px;
-    display: inline-block;
-    margin: 0 0 30px 0;
+#pic3, #contact-content {
+    margin-bottom: 40vh;
+}
+
+#contact-content p {
+    margin: 10px;
+}
+
+#contact-content p a {
+    display: inline;
 }
 
 #contact-content a {
+    color: rgb(0, 119, 255);
+    display: block;
+    margin: 10px;
     text-decoration: none;
-    color: black;
+    width: fit-content;
 }
 
 #contact-content a:hover {
-    color: rgb(226, 95, 43);
+    color: rgb(0, 217, 255);
+}
+
+#pic1 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 1;
+    margin: auto;
+}
+
+#pic2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 2;
+    margin: auto;
+}
+
+#pic3 {
+    grid-column: 4 / 5;
+    grid-row: 3 / 3;
+    margin-top: 0;
 }
 
 img {
+    border-radius: 5%;
     max-width: 100%;
-    height: auto;
+    margin: auto;
 }
 
-h1 {
-    color: rgb(67, 67, 67);
+#studies ul li img, #contact-content img {
+    max-width: 20px;
+    padding-right: 15px;
+    vertical-align: bottom;
+}
+
+#studies ul li p  {
+    align-items: baseline;
 }
 
 .location {
-    color: rgb(226, 95, 43);
+    color: gray;
 }
 
-#tools li {
-    margin-bottom: 10px;
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] summary {
+    margin-bottom: .5em;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:hover {
+    cursor: pointer;
 }
