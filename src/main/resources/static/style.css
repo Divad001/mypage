@@ -166,6 +166,34 @@ img {
     margin: auto;
 }
 
+#studies ul li img, #contact-content img {
+    max-width: 20px;
+    padding-right: 15px;
+    vertical-align: bottom;
+}
+
+#studies ul li p  {
+    align-items: baseline;
+}
+
 .location {
-    color: rgb(0, 119, 255);
+    color: gray;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] summary {
+    margin-bottom: .5em;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:hover {
+    cursor: pointer;
 }
