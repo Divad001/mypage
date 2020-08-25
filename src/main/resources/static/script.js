@@ -3,7 +3,7 @@ if(isIE === true) {
     alert("Internet Explorer doesn't support css grid. Please consider using an other browser for full view. Thank you!")
 }
 
-
+if($(window).width() > 900) {
 var lastId,
     menu = $("#menu"),
     menuHeight = menu.outerHeight()+15,
@@ -39,3 +39,4 @@ $(window).scroll(function(){
          .end().filter("[href='#"+id+"']").parent().addClass("active");
    }                   
 });
+}
