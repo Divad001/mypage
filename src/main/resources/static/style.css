@@ -126,11 +126,11 @@ nav {
     margin: 10px;
 }
 
-#contact-content p a {
+#project p a, #contact-content p a {
     display: inline;
 }
 
-#contact-content a {
+#studies-content a, #contact-content a {
     color: rgb(0, 119, 255);
     display: block;
     margin: 10px;
@@ -138,7 +138,7 @@ nav {
     width: fit-content;
 }
 
-#contact-content a:hover {
+#project a:hover, #contact-content a:hover {
     color: rgb(0, 217, 255);
 }
 
@@ -166,7 +166,7 @@ img {
     margin: auto;
 }
 
-#studies ul li img, #contact-content img {
+#studies ul li img, #project img, #contact-content img {
     max-width: 20px;
     padding-right: 15px;
     vertical-align: bottom;
