@@ -1,6 +1,6 @@
 var isIE = /*@cc_on!@*/false || !!document.documentMode;
 if(isIE === true) {
-    alert("Internet Explorer is not supported. Please consider using an other browser for complete view. Thank you!")
+    alert("Internet Explorer is not supported. Please consider using an other browser for full view. Thank you!")
 }
 
 if($(window).width() > 900) {
@@ -16,7 +16,7 @@ var lastId,
 
 menuItems.click(function(e){
   var href = $(this).attr("href"),
-      offsetTop = href === "#" ? 0 : $(href).offset().top-menuHeight/2;
+      offsetTop = href === "#" ? 0 : $(href).offset().top-menuHeight/14;
   $('html, body').stop().animate({ 
       scrollTop: offsetTop
   }, 300);

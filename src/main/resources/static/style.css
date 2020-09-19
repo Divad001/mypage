@@ -7,7 +7,7 @@ html, body {
 nav {
     position: fixed;
     z-index: 1;
-    top: 50%;
+    top: 40%;
     left: 9%;
     overflow-x: hidden;
     padding: 8px 0;
@@ -126,8 +126,12 @@ nav {
     margin: 10px;
 }
 
-#project p a, #contact-content p a {
+#project-content p a, #contact-content p a {
     display: inline;
+}
+
+#project-content h2, #project-content p {
+    padding-left: 20px;
 }
 
 #studies-content a, #contact-content a {
@@ -138,7 +142,7 @@ nav {
     width: fit-content;
 }
 
-#project a:hover, #contact-content a:hover {
+#project-content a:hover, #contact-content a:hover {
     color: rgb(0, 217, 255);
 }
 
@@ -166,7 +170,7 @@ img {
     margin: auto;
 }
 
-#studies ul li img, #project img, #contact-content img {
+#studies ul li img, #project-content img, #contact-content img {
     max-width: 20px;
     padding-right: 15px;
     vertical-align: bottom;
